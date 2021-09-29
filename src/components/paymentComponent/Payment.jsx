@@ -62,7 +62,7 @@ function Payment() {
             setPeriodError('Неверный формат');
         } else if (e.target.value.includes(' ')) {
             setPeriodError('Строка не должна содержать пробелы');
-        } else if (isNaN(e.target.value[0]) || isNaN(e.target.value[1]) || e.target.value[2] != '/' || isNaN(e.target.value[3]) || isNaN(e.target.value[4])) {
+        } else if (isNaN(e.target.value[0]) || isNaN(e.target.value[1]) || e.target.value[2] !== '/' || isNaN(e.target.value[3]) || isNaN(e.target.value[4])) {
             setPeriodError('Неверный формат');
         } else {
             setPeriodError('');
@@ -101,6 +101,9 @@ function Payment() {
             case 'cvv':
                 setCvvDirty(true)
                 break
+
+            default:
+                return;
         }
     }
 

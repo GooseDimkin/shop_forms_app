@@ -87,7 +87,7 @@ function Delivery() {
         setIndex(e.target.value)
         if (e.target.value.length < 1) {
             setIndexError('Поле индекса не может быть пустым');
-        } else if(isNaN(e.target.value) || e.target.value.length > 5 || e.target.value.length < 5) {
+        } else if(isNaN(e.target.value) || e.target.value.includes(' ') || e.target.value.length > 5 || e.target.value.length < 5) {
             setIndexError('Неверный формат индекса');
             
         } else if (e.target.value[0] === ' ') {
@@ -120,6 +120,9 @@ function Delivery() {
             case 'index':
                 setIndexDirty(true)
                 break
+            
+            default:
+                return;
         }
     }
 
