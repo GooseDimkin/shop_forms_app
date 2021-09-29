@@ -1,0 +1,214 @@
+html {
+  background-color: #F6F8FF;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__heading {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+  font-size: 34px;
+  margin-left: 24px;
+}
+
+.header__logo {
+  margin-right: 24px;
+}
+
+.modal_position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 24px;
+  padding: 20px 40px 20px 40px;
+  margin-top: 150px;
+  width: 400px;
+  height: 520px;
+}
+
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 140px;
+  color: #979797;
+}
+
+.label_delivery {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.label_pay {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.current_step {
+  color: #101D94;
+}
+
+.modal__content__label {
+  color: #101D94;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #101D94;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+:root {
+  --nameBorderStyle: 1px solid #EEEDED;
+  --cityBorderStyle: 1px solid #EEEDED;
+  --adressBorderStyle: 1px solid #EEEDED;
+  --countryBorderStyle: 1px solid #EEEDED;
+  --indexBorderStyle: 1px solid #EEEDED;
+  --cardBorderStyle: 1px solid #EEEDED;
+  --periodBorderStyle: 1px solid #EEEDED;
+  --cvvBorderStyle: 1px solid #EEEDED;
+}
+
+.form__input {
+  border-radius: 5px;
+  padding: 11px 15px 11px 15px;
+  width: 100%;
+  color: #6B6B6B;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.name {
+  border: var(--nameBorderStyle);
+}
+
+.city {
+  border: var(--cityBorderStyle);
+}
+
+.adress {
+  border: var(--adressBorderStyle);
+}
+
+.country {
+  border: var(--countryBorderStyle);
+}
+
+.index {
+  border: var(--indexBorderStyle);
+}
+
+.card {
+  border: var(--cardBorderStyle);
+}
+
+.period {
+  border: var(--periodBorderStyle);
+}
+
+.cvv {
+  border: var(--cvvBorderStyle);
+}
+
+.form__select {
+  border-radius: 5px;
+  padding: 11px 15px 11px 15px;
+  width: 180px;
+  margin-right: 20px;
+  color: #6B6B6B;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding: 12px 15px 10px 10px;
+}
+
+.detail_info_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.short_form__input {
+  border-radius: 5px;
+  padding: 11px 15px 11px 15px;
+  width: 120px;
+  color: #6B6B6B;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.continue_button {
+  cursor: pointer;
+  background-color: #47B752;
+  width: 180px;
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.short_form__flex {
+  margin-right: 30px;
+}
+
+.verified {
+  text-align: center;
+  margin-top: 50%;
+}
+
+.verified__logo {
+  width: 52px;
+  height: 52px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button_link_size {
+  width: 180px;
+}
